@@ -1,7 +1,7 @@
 # Weather CLI
 A command-line tool that accepts a city's name and returns the current weather forecast.
 
-<img width="500" alt="Screenshot 2023-05-27 at 4 09 05 AM" src="https://github.com/anshikagupta26/WeatherMe/assets/71334544/2ff78c96-79d2-46a4-8741-723f1f5ec7bd">
+<img width="526" alt="Screenshot 2023-05-27 at 4 18 21 AM" src="https://github.com/anshikagupta26/WeatherMe/assets/71334544/efcefc02-c549-4ebd-a1cd-e0a09fe0b37b">
 
 # Commands
 
