@@ -37,11 +37,24 @@ def get_weather(city_name):
 
 # define a function to print the help message
 def help():
-    print(YELLOW + '''Usage :-
-$ ./weather.bat <city_name>         # to get weather data for a city
-$ ./weather.bat --help              # to get help message
+    print(YELLOW + '''
+For  Windows Users:
+Usage :-
+  ./weather.bat <city_name>         # to get weather data for a city
+  ./weather.bat --help              # to get help message
 
-Example: ./weather.bat jhansi
+Example: 
+  ./weather.bat jhansi
+  
+
+For Linux and Mac Users:
+Usage :-
+  ./weather.sh <city_name>         # to get weather data for a city
+  ./weather.sh --help              # to get help message
+
+Example: 
+  ./weather.sh jhansi
+
 ''' + RESET)
 
 def main():
