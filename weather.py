@@ -1,10 +1,7 @@
 import requests
 import sys
 
-API_KEY = "API_KEY"
-GREEN = '\033[92m'
-YELLOW = '\033[93m'
-RESET = '\033[0m'  # Reset to default color
+API_KEY = "b2486a8d0e1cdb5d8821cc2eff034c3e"
 
 # GitHub Copilot suggests using a function to fetch weather data from the API.
 # This helps in keeping the code modular and easy to understand.
@@ -26,18 +23,18 @@ def get_weather(city_name):
 
     #parse the response and print the weather data is the response is successful
     weather_data = response.json()
-    print(GREEN + f"Current weather in {weather_data['name']}:" + RESET)
-    print(GREEN + weather_data["weather"][0]["main"] + RESET)
-    print(GREEN + weather_data["weather"][0]["description"] + RESET)
-    print(GREEN + f"Temperature: {weather_data['main']['temp'] - 273.15:.2f}°C" + RESET)
-    print(GREEN + f"Humidity: {weather_data['main']['humidity']}%" + RESET)
-    print(GREEN + f"Pressure: {weather_data['main']['pressure']} hPa" + RESET)
-    print(GREEN + f"Wind: {weather_data['wind']['speed']} m/s" + RESET) 
+    print(f"Current weather in {weather_data['name']}:")
+    print(weather_data["weather"][0]["main"])
+    print(weather_data["weather"][0]["description"])
+    print(f"Temperature: {weather_data['main']['temp'] - 273.15:.2f}°C")
+    print(f"Humidity: {weather_data['main']['humidity']}%")
+    print(f"Pressure: {weather_data['main']['pressure']} hPa")
+    print(f"Wind: {weather_data['wind']['speed']} m/s") 
 
 
 # define a function to print the help message
 def help():
-    print(YELLOW + '''
+    print('''
 For  Windows Users:
 Usage :-
   ./weather.bat <city_name>         # to get weather data for a city
@@ -55,7 +52,7 @@ Usage :-
 Example: 
   ./weather.sh jhansi
 
-''' + RESET)
+''')
 
 def main():
     # city_name = input("Enter city name: ")
