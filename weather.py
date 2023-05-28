@@ -1,7 +1,7 @@
 import requests
 import sys
 
-API_KEY = "b2486a8d0e1cdb5d8821cc2eff034c3e"
+API_KEY = "YOUR_API_KEY"
 
 # GitHub Copilot suggests using a function to fetch weather data from the API.
 # This helps in keeping the code modular and easy to understand.
